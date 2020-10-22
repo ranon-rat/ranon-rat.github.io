@@ -44,26 +44,37 @@
 
                 }
                 const color= (i)=>(0.05*i,float(frameCount)/255)*255;
-                
+
                 function draw(){
-                    
-                    
+                    noFill()
+                                     
+                    beginShape()
                     for(let i =0;i<width;i++){
                         
                         let m =noise(0.02*i,float(frameCount)/500)*height
                         let r=color(i),g=color(i),b=color(i);
                         
                         
-                    
-                        stroke(0)
-                    
-                        point(i,m+(noise(-100,25)*50))
+                     
+                       
+                        
+                        
                         stroke(r,0,b,25)
-                        point(i,m)
+                       
+                        curveVertex(i,m)
+                        /*
+                         beginShape()
+                         stroke(0)
+                        vertex(i,m+(noise(-100,25)*50))
+                         endShape()
+                        */
 
+                    }
+                    endShape()
+                   
+                    
                 }
-                
-                }
+           
             </script>
            
         </div>
