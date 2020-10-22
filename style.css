@@ -1,0 +1,25 @@
+body{
+    color:blue;
+    background: black;
+    font-family: sans-serif;
+    text-align: center;
+    
+    
+    
+}
+
+a{
+    color:yellow;
+    text-decoration: none;
+}
+#ranonComment{
+   
+    display: block; 
+	width: 600px; 
+    margin: auto; 
+    
+}
+canvas{
+    display:block;
+    margin:auto;
+}
