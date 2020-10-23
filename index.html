@@ -40,28 +40,18 @@
             
                 function setup(){
                     createCanvas(600,600)
-                    
-
                 }
                 const color= (i)=>(0.05*i,float(frameCount)/255)*255;
 
                 function draw(){
-                    noFill()
-                                     
+                    noFill()         
                     beginShape()
                     for(let i =0;i<width;i++){
-                        
                         let m =noise(0.02*i,float(frameCount)/500)*height
-                        let r=color(i),g=color(i),b=color(i);
-      
-                        stroke(r,0,b,25)
-                       
+                        stroke(color(i),0,color(i))
                         curveVertex(i,m)
-                       
                     }
-                    endShape()
-                   
-                    
+                    endShape()                
                 }
            
             </script>
