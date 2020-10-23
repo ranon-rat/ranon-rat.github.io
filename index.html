@@ -1,64 +1,44 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            ranon rat
-        </title>
-        <link rel="stylesheet" href="style.css">
-       <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
-       <meta property="og:image" content="https://media.discordapp.net/attachments/706349152015089745/768729634833170462/Captura_de_Pantalla_2020-10-18_a_las_1.13.38_a.m..png?width=922&height=941" />
-    </head><!---chinga tu madre scidroid-->
-    <body>
-        
-        <div id ="ranonComment">
-            <header>
-                <h1>
-                    ranon rat
-                </h1>
-    
-            </header>
-            <h3>
-                hello , welcome to my page!
-            </h3>
-            <p>
-                Im not a fronted developer but i tried my best.
-            </p>
-            <p>
-                If you want to visit my github here we are <a href="https://github.com/ranon-rat">github.</a>
-            </p>
-            <p>
-                one of my best projects was this <a href="https://github.com/ranon-rat/redditReplaceHumans">RedditReplaceHumans</a>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="meta-icon.png">
+    <title>ranon rat</title>
+    <link rel="shortcut icon" href="blank.png" type="image/png">
+    <link rel="apple-touch-icon" href="blank.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+    <script src="p5.js"></script>
+</head> <!-- Chingas BIEN DURO a tu PUTA madre SciDroid -->
+<body>
+    <!-- NoScript Tag -->
+    <noscript>This website requieres JavaScript (which is not supported by your browser) to work properly.</noscript>
 
-            </p>
-            <p>
-                I am a python, golang and javascript developer 
-            </p>
-            <p>and those three languages ​​you will see more on my github.</p>
-
-       
-            <script >
-            
-                function setup(){
-                    createCanvas(600,600)
-                }
-                const color= (i)=>(0.05*i,float(frameCount)/255)*255;
-
-                function draw(){
-                    noFill()         
-                    beginShape()
-                    for(let i =0;i<width;i++){
-                        let m =noise(0.02*i,float(frameCount)/500)*height
-                        stroke(color(i),0,color(i*2))
-                        curveVertex(i,m)
-                    }
-                    endShape()                
-                }
-           
-            </script>
-           
-        </div>
-        <p>
-            i dont have a direct contact but you can dm on discord as 𝖗𝖆𝖓𝖔𝖓 𝖗𝖆𝖙#2435
-        </p>
-    </body>
+    <!-- Body -->
+    <h1>ranon rat</h1>
+    <h3>Hello, welcome to my page.</h3>
+    <h4>(I'm not a frontend developer, but I tried my best).</h5>
+    <h5>If you want to visit my GitHub, <a href="https://github.com/ranon-rat">here it is.</a></h6>
+    <h5>One of my best projects was <a href="https://github.com/ranon-rat/redditReplaceHumans">RedditReplaceHumans</a>.</a></h6>
+    <h5>I am a Python, Golang & JavaScript developer.</h6>
+    <h5>I don't have a direct contact but you can dm on discord as 𝖗𝖆𝖓𝖔𝖓 𝖗𝖆𝖙#2435</h6>
+    <script>
+        function setup() {
+            createCanvas(Math.floor(window.innerWidth-50),600)
+        }
+            const color = (i) => (0.05*i, float(frameCount)/255)*255;
+        function draw() {
+            noFill()
+            beginShape()
+            for(let i =0;i<width;i++){
+                let m =noise(0.02*i,float(frameCount)/500)*height
+                let r=color(i),g=color(i),b=color(i);
+                stroke(r,0,b,25)
+                curveVertex(i,m)                              
+            }
+            endShape()
+        }
+    </script>
+</body>
 </html>
