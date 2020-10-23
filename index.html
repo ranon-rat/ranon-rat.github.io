@@ -48,7 +48,7 @@
                     beginShape()
                     for(let i =0;i<width;i++){
                         let m =noise(0.02*i,float(frameCount)/500)*height
-                        stroke(color(i),0,color(i))
+                        stroke(color(i),0,color(i*2))
                         curveVertex(i,m)
                     }
                     endShape()                
