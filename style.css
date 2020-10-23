@@ -12,13 +12,11 @@ a{
     color:yellow;
     text-decoration: none;
 }
-#ranonComment{
-   
-    display: block; 
-	width: 600px; 
-    margin: auto; 
-    
+
+h3 {
+    margin-top: 30px;
 }
+
 canvas{
     display:block;
     margin:auto;
