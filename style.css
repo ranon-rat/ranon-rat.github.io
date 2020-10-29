@@ -1,18 +1,28 @@
 body{
-    color:blue;
+    color:white;
     background: black;
     font-family: sans-serif;
-    text-align: center;
+}
+#añañin{
     
-    
-    
+    backdrop-filter: opacity(20%);
+    backdrop-filter: blur(3px);
+    margin:auto;
+    width: 500px;
+    height: 1000px;
+
 }
 
 a{
-    color:yellow;
+    color:#2828EF;
     text-decoration: none;
 }
-
+img{
+    width:100px
+}
+a img{
+    width:20px
+}
 h3 {
     margin-top: 30px;
 }
