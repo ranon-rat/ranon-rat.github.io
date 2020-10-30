@@ -14,7 +14,7 @@ function draw() {
     for(let i =0;i<width;i++){
         let m =noise(0.01*i,float(frameCount)/500)*height
         let r=color(i),g=color(i),b=color(i);
-        stroke(0)
+        stroke(r,0,0,25)
         curveVertex(i,m)                              
     }
     endShape()
@@ -29,8 +29,8 @@ function draw() {
     beginShape()
     for(let i =0;i<width;i++){
         let m =noise(0.01*i,float(frameCount)/900)*height
-       let r=color(i)
-        stroke(r,0,0,25)
+   
+        stroke(0)
         curveVertex(i,m)                              
     }
     endShape()
