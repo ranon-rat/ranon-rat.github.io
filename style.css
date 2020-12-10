@@ -3,31 +3,73 @@ body{
     background: black;
     font-family: sans-serif;
 }
-#añañin{
+#main{
     
     backdrop-filter: opacity(20%);
     backdrop-filter: blur(4px);
     margin:auto;
-    width: 500px;
-   
-
+    
+  
 }
 
+
+
+#content{
+    padding-top:20px;
+}
+
+#bar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color:rgb(11, 2, 23);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+    
+}
+#bar li {
+    float: left;
+}
+#bar a{
+  
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+#bar a:hover:not(.active) {
+ 
+    background-color: #111;
+}
+
+#projects img{
+    position: -webkit-sticky;
+    position: sticky;
+  
+   height:120px ;
+
+    
+}
+.article{
+    width:500px
+}
 a{
     color:#2828EF;
     text-decoration: none;
 }
 img{
-    width:100px
+    height:100px;
 }
 a img{
-    width:20px
+    height:20px;
 }
 h3 {
     margin-top: 30px;
 }
 
-canvas{
-    display:block;
-    margin:auto;
-}
+
+
